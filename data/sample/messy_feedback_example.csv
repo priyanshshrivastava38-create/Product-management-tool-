@@ -1,0 +1,13 @@
+Ticket #,Comment,Submitted,Channel,Account,Plan,Area,Stars,ARR
+T-1,CSV export times out on our 20k row report,2026-09-01,Support ticket,ACME-1,Enterprise,Reporting,,"$120,000"
+T-2,Please add dark mode to the web app,09/03/2026,G2 review,BETA-7,SMB,UI,4,"2,400"
+T-3,SSO login loops back to the sign-in page,"Sep 5, 2026",Support ticket,ACME-1,Enterprise,Authentication,,"$120,000"
+T-4,,2026-09-06,NPS survey,GAMMA-2,Mid-Market,,,
+T-5,Dashboard is slow to load every morning,not a date,Support ticket,DELTA-9,SMB,Performance,,
+T-6,Mobile app crashes after the update,2031-01-01,App Store review,EPS-3,SMB,Mobile,1,
+T-7,Slack integration would be great,2026-09-08,CSM note,ZETA-4,Mid-Market,Integrations,five,30000
+T-8,"=HYPERLINK(""http://example.com"",""click"") formula-looking text is stored as plain text",2026-09-09,Support ticket,ETA-5,SMB,,,
+T-2,Please add dark mode to the web app,09/03/2026,G2 review,BETA-7,SMB,UI,4,"2,400"
+T-9,Too many email notifications,2026-09-10,NPS survey,THETA-6,SMB,Notifications,,,EXTRA
+T-10,   Search   does not find   documents   by title  ,2026-09-11T10:30:00Z,Support ticket,IOTA-8,Mid-Market,Search,,18000
+T-11,12345,2026-09-12,NPS survey,KAPPA-1,SMB,,,

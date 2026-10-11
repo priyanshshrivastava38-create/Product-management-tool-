@@ -1,0 +1,51 @@
+text,label
+"The app freezes every time I attach a file, thanks for nothing.",negative
+"Sync has been broken since Tuesday. Please look into it.",negative
+"Login fails on Safari with an unknown error.",negative
+"The report builder is buggy and loses my filters.",negative
+"Page loads are painfully slow during peak hours.",negative
+"Our team finds the permissions model confusing.",negative
+"Upload hangs at 99% and never completes. Thanks!",negative
+"Calendar view crashes when I switch months.",negative
+"Mobile app is unusable on older iPhones.",negative
+"Notifications are unreliable, some never arrive.",negative
+"The import keeps timing out for files over 5MB, would love a fix.",negative
+"We lost two hours of work because autosave failed.",negative
+"Search returns irrelevant results most of the time.",negative
+"Every update breaks our custom fields.",negative
+"Exporting invoices produces corrupted PDFs.",negative
+"The API throttling is killing our nightly jobs.",negative
+"Billing charged us twice this month.",negative
+"Great, the dashboard crashed again.",negative
+"Setup was a nightmare and support took days to reply.",negative
+"Too many errors when saving large projects, please help.",negative
+"Editing permissions is a waste of time with the current UI.",negative
+"The new layout is cluttered and hard to read.",negative
+"I can't find where to change my password, very frustrating.",negative
+"Filters reset whenever I go back, really annoying.",negative
+"Please add a dark mode option.",neutral
+"Could you support exporting to Google Sheets?",neutral
+"We would like an integration with Jira.",neutral
+"Is there a way to schedule reports weekly?",neutral
+"Feature request: bulk archive for old projects.",neutral
+"It would help to have keyboard shortcuts for navigation.",neutral
+"Can admins set default views for new users?",neutral
+"We need SAML support for our next rollout.",neutral
+"Please allow custom fields on tasks.",neutral
+"Any plans for an Android tablet layout?",neutral
+"Would be nice to filter by owner in search.",neutral
+"Our finance team asked about annual invoicing.",neutral
+"The timeline view shows tasks by start date.",neutral
+"We use the app mainly for sprint planning.",neutral
+"Support resolved my ticket quickly, thank you!",positive
+"Love the new automation builder, saves us hours.",positive
+"The onboarding session was excellent and very clear.",positive
+"Reporting has become much faster after the update.",positive
+"Great product, the team adopted it in a week.",positive
+"Really happy with the Slack integration.",positive
+"The templates are fantastic for new projects.",positive
+"Customer success has been responsive and helpful.",positive
+"Clean interface and easy to learn.",positive
+"Thanks for fixing the export bug so fast!",positive
+"Best planning tool we've tried so far.",positive
+"The mobile app works flawlessly for our field staff.",positive

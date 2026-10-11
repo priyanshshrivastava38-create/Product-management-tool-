@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="236" height="40" viewBox="0 0 236 40" fill="none">
+  <rect x="2" y="4" width="32" height="32" rx="9" fill="#4F46E5"/>
+  <path d="M8 21h5.5l3-7 4.5 13 3-6H28" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="44" y="26.5" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0F172A" letter-spacing="-0.3">ProductPulse</text>
+  <text x="166" y="26.5" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#4F46E5" letter-spacing="-0.3">AI</text>
+</svg>
