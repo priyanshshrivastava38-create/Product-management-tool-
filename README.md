@@ -40,7 +40,7 @@ Core journey: **import → analyse → discover a problem → inspect evidence �
 
 ## Quick start (local)
 
-Requires Python 3.12 (3.11 also resolves). The commands below are for macOS/Linux.
+Works on Python 3.11–3.14 (3.12 recommended); the test suite passes on 3.12 and 3.14. The commands below are for macOS/Linux.
 
 ```bash
 git clone https://github.com/priyanshshrivastava38-create/Product-management-tool-.git productpulse-ai && cd productpulse-ai
@@ -88,7 +88,7 @@ All settings are optional environment variables (or Streamlit secrets) prefixed 
 The target is **Streamlit Community Cloud**. Full steps and troubleshooting are in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). In short:
 
 1. Push this repo to GitHub.
-2. On share.streamlit.io, create an app with main file `streamlit_app.py` and Python **3.12** (Advanced settings).
+2. On share.streamlit.io, create an app with main file `streamlit_app.py` and Python **3.12** (Advanced settings; 3.11–3.14 also work).
 3. Optional: add secrets such as `PRODUCTPULSE_DATABASE_URL` (PostgreSQL) or the LLM settings.
 
 **Storage caveat:** Community Cloud's filesystem is ephemeral, so the default SQLite workspace resets whenever the app restarts or redeploys. That's fine for a demo, because the sample loads in one click. For persistence, point `PRODUCTPULSE_DATABASE_URL` at a managed PostgreSQL database. PostgreSQL was tested locally (PostgreSQL 16) with `tests/test_postgres.py`.

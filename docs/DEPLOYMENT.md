@@ -7,7 +7,8 @@
 | Check | Result |
 |---|---|
 | Fresh virtualenv, `pip install -r requirements.txt` (macOS arm64, Python 3.12.4) | Installed in ~105 s; `pip check`: no broken requirements; venv ≈ 1.3 GB |
-| `uv pip compile requirements.txt --python-platform x86_64-manylinux_2_28` for Python 3.12 and 3.11 | Resolves; `torch==2.5.1+cpu`, no NVIDIA/CUDA packages |
+| `uv pip compile requirements.txt --python-platform x86_64-manylinux_2_28 --no-build` for Python 3.11, 3.12, 3.13 and 3.14 | Resolves with pre-built wheels only; `torch==2.9.0+cpu`, no NVIDIA/CUDA packages |
+| Full test suite + browser journey on Python 3.14.8 (fresh env from `requirements.txt`) | 111 passed; journey passes. (Found and fixed: SQLAlchemy 2.0.36 crashes on 3.14 → pinned 2.0.44) |
 | `python scripts/healthcheck.py --with-model` in the fresh env | All checks pass |
 | `streamlit run streamlit_app.py` from the fresh env on an empty database + `scripts/ui_journey.py --full-sample` | Journey passes; no server errors |
 | No required environment variables; no API key needed | Confirmed (health check “Configuration loads”) |
@@ -77,8 +78,9 @@ Attach a persistent volume for SQLite or use PostgreSQL. The health endpoint is 
 
 | Symptom | Cause / fix |
 |---|---|
-| `pyarrow requires NumPy 2.0 or newer` | Mixed NumPy pins. Use the committed `requirements.txt` (numpy 2.1.3, pyarrow 26.0.0) |
-| Build tries to download CUDA libraries | The host ignored `--extra-index-url`. Pin `torch==2.5.1+cpu` with the index line, or switch to `tfidf` and remove torch/sentence-transformers |
+| “Error installing requirements” on Streamlit Cloud | Usually a Python version without pre-built wheels for a pinned package. The committed pins support 3.11–3.14; pull the latest `main` and **Reboot app**. Check **Manage app → logs** for the exact package |
+| `pyarrow requires NumPy 2.0 or newer` | Mixed NumPy pins. Use the committed `requirements.txt` (numpy 2.3.2, pyarrow 22.0.0) |
+| Build tries to download CUDA libraries | The host ignored `--extra-index-url`. Pin `torch==2.9.0+cpu` with the index line, or switch to `tfidf` and remove torch/sentence-transformers |
 | "Semantic model unavailable, used TF-IDF fallback" banner | The model couldn't be downloaded or loaded. Check outbound network access or memory. The app keeps working |
 | Data disappears after a while on Community Cloud | Ephemeral SQLite. Configure PostgreSQL |
 | `Database schema version … does not match` | The DB was created by another schema version. Use a fresh database or reset |
